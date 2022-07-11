@@ -9,7 +9,7 @@
             </div>
 
         <q-toolbar-title class="flex items-center justify-between" >    
-            <div class="header-menu">
+            <div class="header-menu q-pa-xs">
               <div class="flex">
               <q-list>
                   <q-item clickable class="text-dark text-weight-bold">
@@ -53,15 +53,139 @@
       
 
       <q-separator></q-separator>
+      <div class="nav-menu flex container content-center">
+        
+          <q-btn-dropdown auto-close flat menu-anchor="bottom left" menu-self="top left" color="primary" label="Accounts" class="q-btn-nav">
+            <q-list >
+              <q-item clickable v-close-popup @click="onItemClick">
+                <q-item-section >
+                  <q-item-label>Current account</q-item-label>
+                </q-item-section>
+                <q-item-section>
+                  <q-item-label>Foreign Currency Account</q-item-label>
+                </q-item-section>
+                <q-item-section>
+                  <q-item-label>Student Account</q-item-label>
+                </q-item-section>
+                <q-item-section>
+                  <q-item-label>Opening an account through viber</q-item-label>
+                </q-item-section>
+                <q-item-section>
+                  <q-item-label>Payment transactions</q-item-label>
+                </q-item-section>
+              </q-item>
+            </q-list>
+          </q-btn-dropdown>
+       
+          <q-btn-dropdown flat  menu-anchor="bottom left" menu-self="top left" color="primary" label="Cards" class="q-btn-nav">
+            <q-list>
+              <q-item clickable v-close-popup @click="onItemClick">
+                <q-item-section>
+                  <q-item-label>Debit card</q-item-label>
+                </q-item-section>
+                <q-item-section>
+                  <q-item-label>Credit cards</q-item-label>
+                </q-item-section>
+                <q-item-section>
+                  <q-item-label>Prepaid cards</q-item-label>
+                </q-item-section>
+                <q-item-section>
+                  <q-item-label>Our wednesday</q-item-label>
+                </q-item-section>
+                <q-item-section>
+                  <q-item-label>Report card loss</q-item-label>
+                </q-item-section>
+              </q-item>
+            </q-list>
+          </q-btn-dropdown>
+    
+          <q-btn-dropdown flat  menu-anchor="bottom left" menu-self="top left" color="primary" label="Loans" class="q-btn-nav">
+            <q-list>
+              <q-item clickable v-close-popup @click="onItemClick">
+                <q-item-section>
+                  <q-item-label>Cash loans </q-item-label>
+                </q-item-section>
+                <q-item-section>
+                  <q-item-label>Mortgage loans</q-item-label>
+                </q-item-section>
+                <q-item-section>
+                  <q-item-label>commodity loans</q-item-label>
+                </q-item-section>
+                <q-item-section>
+                  <q-item-label>Deposit loan</q-item-label>
+                </q-item-section>
+              </q-item>
+            </q-list>
+          </q-btn-dropdown>
+    
+          <q-btn-dropdown flat  menu-anchor="bottom left" menu-self="top left" color="primary" label="Savings" class="q-btn-nav">
+            <q-list>
+              <q-item clickable v-close-popup @click="onItemClick">
+                <q-item-section>
+                  <q-item-label>Savings accounts</q-item-label>
+                </q-item-section>
+                <q-item-section>
+                  <q-item-label>Term savings</q-item-label>
+                </q-item-section>
+                <q-item-section>
+                  <q-item-label>Free savings</q-item-label>
+                </q-item-section>
+                <q-item-section>
+                  <q-item-label>Children's savings account</q-item-label>
+                </q-item-section>
+                <q-item-section>
+                  <q-item-label>Free children-s savings</q-item-label>
+                </q-item-section>
+               
+              </q-item>
+            </q-list>
+          </q-btn-dropdown>
+  
+          <q-btn-dropdown flat  menu-anchor="bottom left" menu-self="top left" color="primary" label="Online services" class="q-btn-nav">
+            <q-list>
+              <q-item clickable v-close-popup @click="onItemClick">
+                <q-item-section>
+                  <q-item-label>Mobile banking</q-item-label>
+                </q-item-section>
+                <q-item-section>
+                  <q-item-label>Internet banking</q-item-label>
+                </q-item-section>
+                <q-item-section>
+                  <q-item-label>Security</q-item-label>
+                </q-item-section>
+               
+              </q-item>
+            </q-list>
+          </q-btn-dropdown>
+  
+          <q-btn-dropdown flat  menu-anchor="bottom left" menu-self="top left" color="primary" label="Other services" class="q-btn-nav">
+            <q-list>
+              <q-item clickable v-close-popup @click="onItemClick">
+                <q-item-section>
+                  <q-item-label>Moneygram</q-item-label>
+                </q-item-section>
+                <q-item-section>
+                  <q-item-label>Pika card loyalty program</q-item-label>
+                </q-item-section>
+                <q-item-section>
+                  <q-item-label>Western union</q-item-label>
+                </q-item-section>
+                <q-item-section>
+                  <q-item-label>Currency exchange</q-item-label>
+                </q-item-section>
+                <q-item-section>
+                  <q-item-label>Security safes</q-item-label>
+                </q-item-section>
+               
+              </q-item>
+            </q-list>
+          </q-btn-dropdown>
+        
+      </div>
+      
 
-      <q-tabs class="container" align="left">
-        <q-route-tab to="/page1" label="Page One" />
-        <q-route-tab to="/page2" label="Page Two" />
-        <q-route-tab to="/page3" label="Page Three" />
-        <q-route-tab to="/page4" label="Page Four" />
-        <q-route-tab to="/page5" label="Page Five" />
-        <q-route-tab to="/page6" label="Page Six" />
-      </q-tabs>
+
+      
     </q-header>
 
     <q-page-container>
@@ -74,11 +198,19 @@
 
 
 
+
 <script>
 export default {
-  name: 'HeaderMain'
+  setup () {
+    return {
+      onItemClick () {
+        console.log('Clicked on an Item')
+      }
+    }
+  }
 }
 </script>
+
 
 <style lang="scss">
   
@@ -113,8 +245,56 @@ export default {
     box-shadow: 0px 5px 5px 0px rgb(76, 75, 75, 0.2)
   }
 
+  .nav-menu{
+    height: 44px !important;
+  }
+
+  .q-menu{
+    max-width: 200px;
+    text-transform: uppercase;
+    margin-top: 8px !important;
+    border-radius: 0 !important;
+
+
+    .q-item{
+      display: flex;
+      flex-direction: column;
+      gap:20px;
+      margin-top: 10px;
+      padding: 6px;
+    }
+    .q-list .q-item .q-item__section{
+      margin-left: 8px;
+    }
+    .q-item__label{
+      font-weight: 500;
+      letter-spacing: 1px;
+    }
+
+  }
 
   
+    .q-btn-nav.q-btn{
+      font-size: 12px;
+      color: black !important;
+      background-color: transparent !important;
+
+    }
+
+    .q-btn-nav.q-btn:before{
+      box-shadow: none;
+    }
+
+    .q-btn-nav.q-btn .q-focus-helper {
+      display: none;
+    }
+
+    .q-btn .q-btn__content:hover{
+      color: #1976D2;
+    }
+
+
+    
   
 
 
