@@ -5,7 +5,7 @@
       <q-toolbar class="container flex">
           
             <div class="header-logo">
-              <a href="/" class="text-weight-bolder logo-text text-primary">QUASAR BANK</a>
+              <a href="/" class="text-weight-bolder logo-text text-primary">QUBANK</a>
             </div>
 
         <q-toolbar-title class="flex items-center justify-between" >    
@@ -55,7 +55,7 @@
       <q-separator></q-separator>
       <div class="nav-menu flex container content-center">
         
-          <q-btn-dropdown auto-close flat menu-anchor="bottom left" menu-self="top left" color="primary" label="Accounts" class="q-btn-nav">
+          <q-btn-dropdown menu-anchor="bottom left" menu-self="top left" color="primary" label="Accounts" class="q-btn-nav">
             <q-list >
               <q-item clickable v-close-popup @click="onItemClick">
                 <q-item-section >
