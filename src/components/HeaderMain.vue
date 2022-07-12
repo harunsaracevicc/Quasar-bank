@@ -43,7 +43,7 @@
                   </q-item>
                 </q-list>
             </div>
-          </div>   git
+          </div>   
         </q-toolbar-title>
        
         
