@@ -29,21 +29,21 @@
                 </q-list>
               </div>
             </div>
-            <div class="header-info">
+          <div class="header-info">
             <div class="flex">
-             <q-list>
-                <q-item clickable class="text-dark">
-                  <q-item-section>008 170 00</q-item-section> 
-                </q-item>
-              </q-list>
-
               <q-list>
-                <q-item clickable class="text-dark">
-                  <q-item-section>Branch offices and ATMs</q-item-section>
-                </q-item>
-              </q-list>
+                  <q-item clickable class="text-dark">
+                    <q-item-section>008 170 00</q-item-section> 
+                  </q-item>
+                </q-list>
+
+                <q-list>
+                  <q-item clickable class="text-dark">
+                    <q-item-section>Branch offices and ATMs</q-item-section>
+                  </q-item>
+                </q-list>
             </div>
-            </div>   
+          </div>   git
         </q-toolbar-title>
        
         
@@ -213,6 +213,11 @@ export default {
 
 
 <style lang="scss">
+
+.q-field--standard .q-field__control:before {
+    border-bottom: 0 !important;
+    transition: border-color 0.36s cubic-bezier(0.4, 0, 0.2, 1);
+}
   
   .container{
     max-width: 1300px;
@@ -254,7 +259,7 @@ export default {
     text-transform: uppercase;
     margin-top: 8px !important;
     border-radius: 0 !important;
-
+    
 
     .q-item{
       display: flex;
