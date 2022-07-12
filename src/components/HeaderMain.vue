@@ -242,7 +242,7 @@ export default {
   }
 
   .q-header{
-    box-shadow: 0px 5px 5px 0px rgb(76, 75, 75, 0.2)
+    box-shadow: 0px 1px 15px 0px rgb(76, 75, 75, 0.2)
   }
 
   .nav-menu{
