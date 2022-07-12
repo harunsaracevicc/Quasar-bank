@@ -32,8 +32,8 @@
           <div class="header-info">
             <div class="flex">
               <q-list>
-                  <q-item clickable class="text-dark">
-                    <q-item-section>008 170 00</q-item-section> 
+                  <q-item clickable class="text-dark text-weight-bold" >
+                    <q-item-section class="special-item-section "><q-icon class="iconPhone" name="phone"></q-icon>008 170 00</q-item-section> 
                   </q-item>
                 </q-list>
 
@@ -201,6 +201,8 @@
 
 <script>
 export default {
+
+
   setup () {
     return {
       onItemClick () {
@@ -213,6 +215,17 @@ export default {
 
 
 <style lang="scss">
+
+.special-item-section {
+  display: flex;
+  flex-direction: row !important;
+  align-items: center;
+  gap: 6px;
+}
+
+.iconPhone{
+  font-size: 16px;  
+}
 
 .q-field--standard .q-field__control:before {
     border-bottom: 0 !important;
