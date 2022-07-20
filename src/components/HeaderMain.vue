@@ -182,20 +182,9 @@
                
               </q-item>
             </q-list>
-          </q-btn-dropdown>
-        
+          </q-btn-dropdown>       
       </div>
-      
-
-
-      
     </q-header>
-
-    <q-page-container>
-      <!-- <router-view /> -->
-     
-    </q-page-container>
-
   </q-layout>
 </template>
 

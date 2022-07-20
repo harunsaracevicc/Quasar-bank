@@ -1,11 +1,12 @@
 <template>
   <q-layout view="hhh lpR fff">
 
-    <HeaderMain />
-    <BodyMain />
+    
 
     <q-page-container>
       <!-- <router-view /> -->
+      <HeaderMain />
+    <BodyMain />
       
     </q-page-container>
 
